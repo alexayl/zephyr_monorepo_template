@@ -18,7 +18,7 @@ A template repository for managing a monorepo containing a Zephyr project.
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/zephyr_monorepo_template.git
+    git clone https://github.com/alexayl/zephyr_monorepo_template.git
     cd zephyr_monorepo_template
     ```
 
@@ -38,12 +38,10 @@ A template repository for managing a monorepo containing a Zephyr project.
     cd firmware
     west update
     ```
-
-5. Install other python packages
-    ```bash
-    west packages pip --install
-    ```
-6. Try to build and run
+    
+5. Try to build and run
     ```bash
     just run-sim
     ```
+If these don't work, try the following things:
+- `west packages pip --install`
