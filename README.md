@@ -37,11 +37,10 @@ A template repository for managing a monorepo containing a Zephyr project.
     ```bash
     cd firmware
     west update
+    west packages pip --install
     ```
     
 5. Try to build and run
     ```bash
     just run-sim
     ```
-If these don't work, try the following things:
-- `west packages pip --install`
