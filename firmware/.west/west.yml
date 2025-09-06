@@ -28,8 +28,16 @@ manifest:
     - name: zephyr
       remote: upstream
       revision: main
-      path: firmware/zephyr
+      path: zephyr
       import: false
+      import:
+        # By using name-allowlist we can clone only the modules that are
+        # strictly needed by the application.
+        name-allowlist:
+          - hal_espressif # required for ESP32-based boards
 
   self:
     path: zephyr
+
+
+# Copyright (c) 2021 Nordic Semiconductor ASA
